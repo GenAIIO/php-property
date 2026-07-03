@@ -1,0 +1,17 @@
+{
+    "name": "genai/property-demo",
+    "type": "project",
+    "repositories": [
+        { "type": "path", "url": ".." },
+        { "type": "path", "url": "../../php-container" }
+    ],
+    "require": {
+        "genai/property": "*",
+        "genai/container": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cache\\": "cache/"
+        }
+    }
+}

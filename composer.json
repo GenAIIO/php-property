@@ -1,0 +1,27 @@
+{
+    "name": "genai/property",
+    "version": "1.0.0",
+    "description": "Compile-time config (.env / .ini) binder: compiles #[Property] classes into a container fragment so config resolves as DI beans. Runtime is PHP 5.3.29.",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        { "type": "path", "url": "../php-container" }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "genai/container": "*"
+    },
+    "suggest": {
+        "genai/attribute": "PHP 8 build-time #[Property] scanning via GenAI\\Property\\Attribute\\PropertyProcessor (the runtime stays PHP 5.3)."
+    },
+    "extra": {
+        "genai": {
+            "processors": ["GenAI\\Property\\Attribute\\PropertyProcessor"]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "GenAI\\Property\\": "src/"
+        }
+    }
+}
