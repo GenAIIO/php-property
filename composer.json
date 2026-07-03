@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Compile-time config (.env / .ini) binder: compiles #[Property] classes into a container fragment so config resolves as DI beans. Runtime is PHP 5.3.29.",
     "type": "library",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "repositories": [
         { "type": "path", "url": "../php-container" }
     ],
